@@ -1,4 +1,4 @@
-## [pyMIDICapSense](http://midilab.co/projects/pymidicapsense/) - Capacitive Sensor MIDI Controller for Raspberry(s), Odroid(s) and Cubieboard(s).
+# Capacitive Sensor MIDI Controller for Raspberry(s), Odroid(s) and Cubieboard(s).
 
 ## What is pyMIDICapSense?
 
@@ -13,10 +13,10 @@ With pyMIDICapSense you can:
 1. Turn nearly everything you could imagine, like water cup, fruits or your pet into a touchable MIDI Controller.
 2. Transform your touches into MIDI Commands to interact with instruments or plugins. For now only MIDI Notes are supported.
 3. Configure each Capacitive Sensor to be trigguered into 4 different modes: 
-RANDOM: you create a list of (n) MIDI notes for a sensor and each touch it will send a random MIDI note within the list.
-SEQUENTIAL: you create a list of (n) MIDI notes for a sensor and each touch it will send the (n)+1 MIDI note within the list.
-BANK_SELECT: you create more than one BANK to handle more complex setups. you create a list of (n) MIDI notes for a sensor and each touch it will send the selected BANK (n) MIDI note within the list.
-BANK_CHANGE: you setup the sensor as a functional touchable BANK changer.
+*RANDOM*: you create a list of (n) MIDI notes for a sensor and each touch it will send a random MIDI note within the list.
+*SEQUENTIAL*: you create a list of (n) MIDI notes for a sensor and each touch it will send the (n)+1 MIDI note within the list.
+*BANK_SELECT*: you create more than one BANK to handle more complex setups. you create a list of (n) MIDI notes for a sensor and each touch it will send the selected BANK (n) MIDI note within the list.
+*BANK_CHANGE*: you setup the sensor as a functional touchable BANK changer.
 4. Configure a user feedback for each sensor. Eg. On each sensor touch, ligth a LED or Start a engine. 
 
 
@@ -24,7 +24,7 @@ BANK_CHANGE: you setup the sensor as a functional touchable BANK changer.
 
 RTMIDI and wiringPI2 are required to run this project
 
-### Dependencies
+**Dependencies**
 On Debian/Ubuntu
 ```bash
 sudo apt-get install build-essential python-dev python-pip python-setuptools libasound-dev git libjack-dev
@@ -35,16 +35,15 @@ On Archlinux
 sudo pacman -S base-devel python python-pip python-setuptools git alsa-lib
 ```
 
-### RTMidi for python
+**RTMidi for python**
 Install via pip
 ```bash
 sudo pip install --pre python-rtmidi
 ```
 
-### WiringPI2 for python
+**WiringPI2 for python**
 
-**Raspberry**
-https://github.com/Gadgetoid/WiringPi2-Python
+[Raspberry](https://github.com/Gadgetoid/WiringPi2-Python/)
 
 Compile WiringPI C version
 ```bash
@@ -56,16 +55,14 @@ Compile the WiringPI2 python version
 git clone https://github.com/Gadgetoid/WiringPi2-Python.git; cd WiringPi2-Python; sudo python setup.py install
 ```
 
-**Cubieboard**
-https://github.com/gootoomoon/WiringCB-python
+[Cubieboard](https://github.com/gootoomoon/WiringCB-python/)
 
 Compile the WiringPI C and python version once
 ```bash
 git clone https://github.com/gootoomoon/WiringCB-python.git; cd WiringCB-python; sudo python setup.py install
 ```
 
-**ODROID-C1**
-https://github.com/mlinuxguy/WiringPi2-odroid-c1
+[ODROID-C1](https://github.com/mlinuxguy/WiringPi2-odroid-c1/)
  
 Compile WiringPI C version
 ```bash
@@ -91,4 +88,7 @@ After all, run pyMIDICapSense.py
 ```bash
 python pyMIDICapSense.py
 ```
+
+**Full details at:**
+http://midilab.co/projects/pymidicapsense/
 
