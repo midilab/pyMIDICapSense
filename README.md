@@ -91,6 +91,11 @@ After all, run pyMIDICapSense.py
 python pyMIDICapSense.py
 ```
 
+## Hardware schematic
+
+Soon, updates on how to wire and setup your sensors! Sorry for my lack of time for this :(
+
+
 **Full details at:**
 http://midilab.co/projects/pymidicapsense/
 
