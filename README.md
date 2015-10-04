@@ -25,6 +25,7 @@ With pyMIDICapSense you can:
 RTMIDI and wiringPI2 are required to run this project
 
 **Dependencies**
+
 On Debian/Ubuntu
 ```bash
 sudo apt-get install build-essential python-dev python-pip python-setuptools libasound-dev git libjack-dev
@@ -36,6 +37,7 @@ sudo pacman -S base-devel python python-pip python-setuptools git alsa-lib
 ```
 
 **RTMidi for python**
+
 Install via pip
 ```bash
 sudo pip install --pre python-rtmidi
