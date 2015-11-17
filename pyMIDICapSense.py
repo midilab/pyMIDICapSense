@@ -1,6 +1,5 @@
 import wiringpi2
-import rtmidi_python as rtmidi
-#import rtmidi
+import rtmidi
 
 from defines import *
 
@@ -95,8 +94,8 @@ for sensor in SENSORS:
 	Setup(sensor['output'], sensor['input'], sensor['led'])
 
 # Init virtual midi port
-midi_out = rtmidi.MidiOut(b'')
-midi_out.open_virtual_port(b'')
+midi_out = rtmidi.MidiOut()
+midi_out.open_virtual_port()
 
 # loop
 while True:
